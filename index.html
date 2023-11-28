@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Participant Management</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h2 {
+      text-align: center;
+
+font-family: 'Arial', sans-serif; /* Specify the desired font family */
+ color: #161718; /* Text color */
+ font-size: 2em; /* Font size */
+ font-weight: bold; /* Font weight */
+ text-align: center; /* Text alignment */
+ margin-bottom: 20px; /* Bottom margin */
+ text-transform: uppercase
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin: 10px;
+      border: none;
+    outline: none;
+    padding: 12px;
+    color: #fff;
+    background-color: #00bcd4;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 6px; 
+    transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hackathon Participants</h2>
+
+  <label for="participantName">Participant Name:</label>
+  <input type="text" id="participantName" placeholder="Enter participant name">
+
+  <label for="participantAge">Participant Age:</label>
+  <input type="text" id="participantAge" placeholder="Enter participant Age">
+
+  <label for="participantMail">Participant Mail:</label>
+  <input type="text" id="participantMail" placeholder="Enter participant mail">
+  
+  <button id="addbutton" onclick= addi()>Add Participant</button>
+  <button onclick="displayParticipants()">Display Participants</button>
+
+  <ul id="participantList"></ul>
+  <script src="main.js"></script>
+</body>
+</html>
